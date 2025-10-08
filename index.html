@@ -1,160 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio for Eloy Perez Quinones, a Computer Science student at The University of Texas at El Paso." />
     <title>Eloy Perez Quinones | Portfolio</title>
-    <link rel="stylesheet" href="styles (1).css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  </head>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css" />
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="container">
-        <h1>Eloy Perez Quinones</h1>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="container">
+            <a href="#home" class="logo">Eloy Perez Quinones</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger-menu" aria-label="Open navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
     <main>
-      <section id="home" class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-text">
-              <h2>Computer Science Student</h2>
-              <p>
-                Hi, I'm Eloy Perez Quinones. I'm a passionate and driven Computer Science student at The University of Texas at El Paso with a strong foundation in software development and problem-solving.
-              </p>
-              <a href="#projects" class="button">View My Work</a>
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h2>Computer Science Student</h2>
+                    <p>
+                        Hi, I'm Eloy Perez Quinones. I'm a passionate and driven Computer Science student at The University of Texas at El Paso with a strong foundation in software development and problem-solving.
+                    </p>
+                    <a href="#projects" class="button">View My Work</a>
+                </div>
+                <div class="hero-image">
+                    <img src="EloyPerez.png" alt="Eloy Perez Quinones" />
+                </div>
             </div>
-            <div class="hero-image">
-              <img
-                src="EloyPerez.png"
-                alt="Eloy Perez Quinones"
-              />
+        </section>
+
+        <section id="about" class="fade-in">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    I am a Computer Science major at The University of Texas at El Paso, expecting to graduate in December 2027 with a GPA of 3.76. I've consistently made the Dean's List and am deeply involved in the tech community on campus. As the Management Chair for the Association for Computer Machinery (ACM), I oversee logistics for major events like hackathons and workshops. I am also an active member of the Coding Interview Code (CIC) group, where I sharpen my problem-solving and coding skills weekly. I thrive in collaborative environments and am always eager to apply my skills to solve real-world challenges.
+                </p>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="about">
-        <div class="container">
-          <h2>About Me</h2>
-          <p>
-            I am a Computer Science major at The University of Texas at El Paso, expecting to graduate in December 2027 with a GPA of 3.76. I've consistently made the Dean's List and am deeply involved in the tech community on campus. As the Management Chair for the Association for Computer Machinery (ACM), I oversee logistics for major events like hackathons and workshops. I am also an active member of the Coding Interview Code (CIC) group, where I sharpen my problem-solving and coding skills weekly. I thrive in collaborative environments and am always eager to apply my skills to solve real-world challenges.
-          </p>
-        </div>
-      </section>
-      
-      <hr>
-
-      <section id="experience">
-        <div class="container">
-          <h2>Work Experience</h2>
-          <div class="experience-item">
-            <h3>Team Leader - Computer Science Tech Team</h3>
-            <p class="experience-date">September 2024 - August 2025</p>
-            <ul>
-              <li>Led a team of 5 undergraduate assistants, assigning tasks and ensuring timely completion of department objectives.</li>
-              <li>Improved team efficiency by implementing workflow documentation and promoting best practices in task management.</li>
-              <li>Provided front-line tech support to faculty and staff, troubleshooting hardware, software, and network issues.</li>
-              <li>Trained and mentored new staff members on technical procedures and departmental protocols.</li>
-            </ul>
-          </div>
-          <h2>Leadership & Activities</h2>
-          <div class="experience-item">
-            <h3>Management Chair - Association for Computer Machinery (ACM)</h3>
-            <p class="experience-date">January 2025 - Present</p>
-            <ul>
-                [cite_start]<li>Oversee all logistics for ACM events, including hackathons, datathons, and technical workshops.</li>
-                [cite_start]<li>Coordinate event planning from start to finish by securing venues, managing schedules, and ensuring resource availability.</li>
-                [cite_start]<li>Collaborate with other student organizations to co-host events and increase student engagement.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <hr>
-
-      <section id="projects">
-        <div class="container">
-          <h2>My Projects</h2>
-          <div class="project-grid">
-            <div class="project-card">
-              <h3>RFI Generator & Economic Impact Simulator</h3>
-              <p>Developed a full-stack web app that generates professional RFI reports and economic impact simulations. Integrated the OpenAI API for context-aware responses and used a Supabase database to pull data dynamically.</p>
-              <p class="project-tech"><strong>Tech Used:</strong> Flask, Supabase, OpenAI API, Streamlit</p>
+        <section id="experience" class="fade-in">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <div class="experience-item">
+                    <h3>Team Leader - Computer Science Tech Team</h3>
+                    <p class="experience-date">September 2024 - August 2025</p>
+                    <ul>
+                        <li>Led a team of 5 undergraduate assistants, assigning tasks and ensuring timely completion of department objectives.</li>
+                        <li>Improved team efficiency by implementing workflow documentation and promoting best practices in task management.</li>
+                        <li>Provided front-line tech support to faculty and staff, troubleshooting hardware, software, and network issues.</li>
+                        <li>Trained and mentored new staff members on technical procedures and departmental protocols.</li>
+                    </ul>
+                </div>
+                <h2>Leadership & Activities</h2>
+                <div class="experience-item">
+                    <h3>Management Chair - Association for Computer Machinery (ACM)</h3>
+                    <p class="experience-date">January 2025 - Present</p>
+                    <ul>
+                        <li>Oversee all logistics for ACM events, including hackathons, datathons, and technical workshops.</li>
+                        <li>Coordinate event planning from start to finish by securing venues, managing schedules, and ensuring resource availability.</li>
+                        <li>Collaborate with other student organizations to co-host events and increase student engagement.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="project-card">
-              <h3>AI Resume Parser</h3>
-              <p>Built a full-stack web app that parses resumes and provides automated scoring with personalized feedback. Utilized Pandas and NLP techniques to match candidate skills against job descriptions.</p>
-              <p class="project-tech"><strong>Tech Used:</strong> Flask, NLP, Pandas, HTML, CSS</p>
-            </div>
-            <div class="project-card">
-              <h3>Eloy's Study Hub</h3>
-              <p>Created an interactive study platform with Streamlit, integrating Google Generative AI for personalized assistance. Features include an AI PDF reader, a scientific calculator, and custom study aid generation.</p>
-              <p class="project-tech"><strong>Tech Used:</strong> Python, Streamlit, Google Generative AI, PyPDF2</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <hr>
-
-      <section id="skills">
-          <div class="container">
-              <h2>Skills</h2>
-              <div class="skills-list">
-                  <span>Leadership</span>
-                  <span>Problem Solving</span>
-                  <span>Communication</span>
-                  <span>Collaboration</span>
-                  <span>Customer Service</span>
-                  <span>Critical Thinking</span>
-                  <span>Time Management</span>
-                  <span>Integrity</span>
-                  <span>Adaptability</span>
-              </div>
-          </div>
-      </section>
-
-      <hr>
-
-      <section id="contact">
-        <div class="container">
-          <h2>Contact Me</h2>
-          <div class="contact-info">
-            <div>
-              <h3>Email</h3>
-              <p class="email">
-                <a href="mailto:perez.qeloy@gmail.com">perez.qeloy@gmail.com</a>
-              </p>
+        <section id="projects" class="fade-in">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>RFI Generator & Economic Impact Simulator</h3>
+                        <p>Developed a full-stack web app that generates professional RFI reports and economic impact simulations. Integrated the OpenAI API for context-aware responses and used a Supabase database to pull data dynamically.</p>
+                        <p class="project-tech"><strong>Tech Used:</strong> Flask, Supabase, OpenAI API, Streamlit</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>AI Resume Parser</h3>
+                        <p>Built a full-stack web app that parses resumes and provides automated scoring with personalized feedback. Utilized Pandas and NLP techniques to match candidate skills against job descriptions.</p>
+                        <p class="project-tech"><strong>Tech Used:</strong> Flask, NLP, Pandas, HTML, CSS</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Eloy's Study Hub</h3>
+                        <p>Created an interactive study platform with Streamlit, integrating Google Generative AI for personalized assistance. Features include an AI PDF reader, a scientific calculator, and custom study aid generation.</p>
+                        <p class="project-tech"><strong>Tech Used:</strong> Python, Streamlit, Google Generative AI, PyPDF2</p>
+                    </div>
+                </div>
             </div>
-            <div>
-              <h3>LinkedIn</h3>
-               <p><a href="https://www.linkedin.com/in/eloy-perez-quinones/" target="_blank">linkedin.com/in/eloy-perez-quinones</a></p>
+        </section>
+
+        <section id="skills" class="fade-in">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <span>Leadership</span>
+                    <span>Problem Solving</span>
+                    <span>Communication</span>
+                    <span>Collaboration</span>
+                    <span>Customer Service</span>
+                    <span>Critical Thinking</span>
+                    <span>Time Management</span>
+                    <span>Integrity</span>
+                    <span>Adaptability</span>
+                </div>
             </div>
-            <div>
-              <h3>Location</h3>
-              <p>El Paso, Texas</p>
+        </section>
+
+        <section id="contact" class="fade-in">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <a href="mailto:perez.qeloy@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>perez.qeloy@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/eloy-perez-quinones/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/eloy-perez-quinones</span>
+                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>El Paso, Texas</span>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
 
     <footer>
-      <div class="container">
-        <p>&copy; 2025 Eloy Perez Quinones. All rights reserved.</p>
-      </div>
+        <div class="container">
+            <p>&copy; 2025 Eloy Perez Quinones. All rights reserved.</p>
+        </div>
     </footer>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
