@@ -4,8 +4,8 @@
     --primary-hover: #0097a7;
     --background-color: #121212; /* Dark background */
     --surface-color: #1e1e1e;   /* For cards and surfaces */
-    --text-primary: #e0e0e0;     /* Light grey for main text */
-    --text-secondary: #a0a0a0;   /* Dimmer text for subheadings */
+    --text-primary: #e0e0e0;    /* Light grey for main text */
+    --text-secondary: #a0a0a0;  /* Dimmer text for subheadings */
     --border-color: #333333;
     --font-header: 'Montserrat', sans-serif;
     --font-body: 'Roboto', sans-serif;
@@ -30,7 +30,9 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-header);
     color: var(--text-primary);
     font-weight: 700;
@@ -72,6 +74,7 @@ section {
 section:nth-of-type(even) {
     background-color: var(--surface-color);
 }
+
 
 /* --- Header & Navigation --- */
 header {
@@ -141,6 +144,7 @@ header .container {
     cursor: pointer;
 }
 
+
 /* --- Hero Section --- */
 .hero {
     min-height: 100vh;
@@ -165,8 +169,9 @@ header .container {
     font-size: 2rem;
     color: var(--text-secondary);
 }
+
 .hero-text h2::after {
-    display: none; /* remove underline from hero h2 */
+    display: none; /* Remove underline from hero h2 */
 }
 
 .hero-text p {
@@ -174,21 +179,52 @@ header .container {
     margin: 20px 0 30px;
 }
 
+
+/* --- Hero Buttons --- */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .button {
+    display: inline-block;
     background-color: var(--primary-color);
     color: #121212;
     padding: 12px 25px;
     border-radius: 5px;
     font-weight: 700;
     text-transform: uppercase;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .button:hover {
     background-color: var(--primary-hover);
+    color: #121212;
     transform: translateY(-3px);
 }
 
+.button-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.button-secondary:hover {
+    background-color: var(--primary-color);
+    color: #121212;
+}
+
+.button i {
+    margin-right: 6px;
+}
+
+
+/* --- Hero Image --- */
 .hero-image {
     flex-basis: 300px;
 }
@@ -200,6 +236,7 @@ header .container {
     box-shadow: 0 0 25px rgba(0, 188, 212, 0.4);
 }
 
+
 /* --- Experience Section --- */
 .experience-item {
     background-color: #2a2a2a;
@@ -208,14 +245,20 @@ header .container {
     margin-bottom: 30px;
     border-left: 4px solid var(--primary-color);
 }
-.experience-item h3 { margin-top: 0; }
+
+.experience-item h3 {
+    margin-top: 0;
+}
+
 .experience-date {
     color: var(--text-secondary);
     font-style: italic;
 }
+
 .experience-item ul {
     padding-left: 20px;
 }
+
 
 /* --- Projects Section --- */
 .project-grid {
@@ -231,7 +274,9 @@ header .container {
     border: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .project-card:hover {
@@ -245,10 +290,11 @@ header .container {
 }
 
 .project-tech {
-    margin-top: auto; /* Pushes tech stack to the bottom */
+    margin-top: auto;
     color: var(--text-secondary);
     font-size: 0.9rem;
 }
+
 
 /* --- Skills Section --- */
 .skills-list {
@@ -266,7 +312,16 @@ header .container {
     font-size: 0.9rem;
     font-weight: 500;
     border: 1px solid var(--border-color);
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
 }
+
+.skills-list span:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary-color);
+}
+
 
 /* --- Contact Section --- */
 .contact-info {
@@ -290,6 +345,11 @@ header .container {
     color: var(--primary-color);
 }
 
+.contact-item:hover {
+    color: var(--primary-color);
+}
+
+
 /* --- Footer --- */
 footer {
     background-color: var(--surface-color);
@@ -299,11 +359,14 @@ footer {
     border-top: 1px solid var(--border-color);
 }
 
+
 /* --- Animations --- */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition:
+        opacity 0.6s ease-out,
+        transform 0.6s ease-out;
 }
 
 .fade-in.visible {
@@ -311,26 +374,80 @@ footer {
     transform: translateY(0);
 }
 
+
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
+
     .main-nav {
         display: none;
         position: absolute;
-        top: 70px; /* height of header */
+        top: 70px;
         left: 0;
         width: 100%;
         background-color: #1e1e1e;
         flex-direction: column;
         align-items: center;
     }
-    .main-nav.active { display: flex; }
-    .main-nav ul { flex-direction: column; width: 100%; }
-    .main-nav li { margin: 0; width: 100%; text-align: center; }
-    .main-nav a { display: block; padding: 15px; border-bottom: 1px solid var(--border-color); }
-    .main-nav a:hover::after, .main-nav a.active::after { width: 0; }
-    .hamburger { display: block; }
-    
-    .hero-container { flex-direction: column; text-align: center; }
-    .hero-text h2 { text-align: center; }
-    .hero-image { margin-top: 40px; }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-nav li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .main-nav a:hover::after,
+    .main-nav a.active::after {
+        width: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+        max-width: 280px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
