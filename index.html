@@ -1,155 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio for Eloy Perez Quinones, a Computer Science student at The University of Texas at El Paso." />
-    <title>Eloy Perez Quinones | Portfolio</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
+
+    <meta
+        name="description"
+        content="Portfolio of Eloy Perez Quinones, Computer Science student at The University of Texas at El Paso."
+    />
+
+    <title>Eloy Perez Quinones | Computer Science Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles (1).css" />
 </head>
 
 <body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
     <header>
         <div class="container">
-            <a href="#home" class="logo">Eloy Perez Quinones</a>
+
+            <a href="#home" class="logo">
+                Eloy Perez Quinones
+            </a>
+
             <nav class="main-nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <button class="hamburger" id="hamburger-menu" aria-label="Open navigation menu">
+
+            <button
+                class="hamburger"
+                id="hamburger-menu"
+                aria-label="Open navigation menu"
+            >
                 <i class="fas fa-bars"></i>
             </button>
+
         </div>
     </header>
 
+
     <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
         <section id="home" class="hero">
+
             <div class="container hero-container">
+
                 <div class="hero-text">
-                    <h2>Computer Science Student</h2>
+
+                    <h2>Computer Science Student & Developer</h2>
+
                     <p>
-                        Hi, I'm Eloy Perez Quinones. I'm a passionate and driven Computer Science student at The University of Texas at El Paso with a strong foundation in software development and problem-solving.
+                        Hi, I'm Eloy Perez Quinones, a Computer Science student
+                        at The University of Texas at El Paso. I enjoy building
+                        software, working with data, developing AI-powered
+                        applications, and using technology to solve real-world
+                        problems.
                     </p>
-                    <a href="#projects" class="button">View My Work</a>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="button">
+                            View My Work
+                        </a>
+
+                        <a
+                            href="Eloy-Perez-Resume.docx"
+                            class="button button-secondary"
+                            download
+                        >
+                            <i class="fas fa-file-arrow-down"></i>
+                            Resume
+                        </a>
+
+                    </div>
+
                 </div>
+
+
                 <div class="hero-image">
-                    <img src="EloyPerez.jpg" alt="Eloy Perez Quinones" />
+
+                    <img
+                        src="EloyPerez.jpg"
+                        alt="Eloy Perez Quinones"
+                    />
+
                 </div>
+
             </div>
+
         </section>
 
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
         <section id="about" class="fade-in">
+
             <div class="container">
+
                 <h2>About Me</h2>
+
                 <p>
-                    I am a Computer Science major at The University of Texas at El Paso, expecting to graduate in December 2027 with a GPA of 3.76. I've consistently made the Dean's List and am deeply involved in the tech community on campus. As the Management Chair for the Association for Computer Machinery (ACM), I oversee logistics for major events like hackathons and workshops. I am also an active member of the Coding Interview Code (CIC) group, where I sharpen my problem-solving and coding skills weekly. I thrive in collaborative environments and am always eager to apply my skills to solve real-world challenges.
+                    I am pursuing a Bachelor of Science in Computer Science at
+                    The University of Texas at El Paso and expect to graduate
+                    in December 2027.
                 </p>
+
+                <p>
+                    Through my coursework, personal projects, and professional
+                    experience at UTEP, I have developed experience in software
+                    development, technical support, artificial intelligence,
+                    web development, APIs, and data-driven applications.
+                </p>
+
+                <p>
+                    Outside of academics, I am actively involved with the
+                    Association for Computer Machinery (ACM), Coding Interview
+                    Code (CIC), and Google Developer Group (GDG) UTEP. I enjoy
+                    collaborative environments where I can continue learning,
+                    solving challenging problems, and building useful
+                    technology.
+                </p>
+
             </div>
+
         </section>
 
+
+
+        <!-- =========================
+             EXPERIENCE
+        ========================== -->
         <section id="experience" class="fade-in">
+
             <div class="container">
+
                 <h2>Work Experience</h2>
+
+
+                <!-- Learning Environments -->
                 <div class="experience-item">
-                    <h3>Team Leader - Computer Science Tech Team</h3>
-                    <p class="experience-date">September 2024 - August 2025</p>
+
+                    <h3>
+                        Undergraduate Assistant – Learning Environments
+                    </h3>
+
+                    <p class="experience-date">
+                        October 2025 – Present
+                    </p>
+
                     <ul>
-                        <li>Led a team of 5 undergraduate assistants, assigning tasks and ensuring timely completion of department objectives.</li>
-                        <li>Improved team efficiency by implementing workflow documentation and promoting best practices in task management.</li>
-                        <li>Provided front-line tech support to faculty and staff, troubleshooting hardware, software, and network issues.</li>
-                        <li>Trained and mentored new staff members on technical procedures and departmental protocols.</li>
+                        <li>
+                            Collaborate with students, faculty, and staff to
+                            support and improve learning environments.
+                        </li>
+
+                        <li>
+                            Research and implement emerging technologies to
+                            enhance teaching and learning spaces.
+                        </li>
+
+                        <li>
+                            Contribute to projects that redesign learning spaces
+                            to promote creativity and innovation.
+                        </li>
                     </ul>
+
                 </div>
+
+
+                <!-- CS Tech Team -->
+                <div class="experience-item">
+
+                    <h3>
+                        Team Leader – Computer Science Tech Team
+                    </h3>
+
+                    <p class="experience-date">
+                        September 2024 – August 2025
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Led a team of five undergraduate assistants,
+                            delegating tasks and ensuring department objectives
+                            were completed on time.
+                        </li>
+
+                        <li>
+                            Improved team efficiency by creating workflow
+                            documentation and promoting best practices.
+                        </li>
+
+                        <li>
+                            Provided technical support to faculty and staff,
+                            troubleshooting hardware, software, and network
+                            issues.
+                        </li>
+
+                        <li>
+                            Ran weekly team meetings to establish goals and
+                            improve collaboration.
+                        </li>
+
+                        <li>
+                            Trained and mentored new staff in technical and
+                            customer service skills.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- =========================
+                     LEADERSHIP
+                ========================== -->
+
                 <h2>Leadership & Activities</h2>
+
+
+                <!-- ACM Secretary -->
                 <div class="experience-item">
-                    <h3>Management Chair - Association for Computer Machinery (ACM)</h3>
-                    <p class="experience-date">January 2025 - Present</p>
+
+                    <h3>
+                        Secretary – Association for Computer Machinery (ACM)
+                    </h3>
+
+                    <p class="experience-date">
+                        August 2025 – Present
+                    </p>
+
                     <ul>
-                        <li>Oversee all logistics for ACM events, including hackathons, datathons, and technical workshops.</li>
-                        <li>Coordinate event planning from start to finish by securing venues, managing schedules, and ensuring resource availability.</li>
-                        <li>Collaborate with other student organizations to co-host events and increase student engagement.</li>
+
+                        <li>
+                            Record and distribute meeting minutes to maintain
+                            clear communication and organizational records.
+                        </li>
+
+                        <li>
+                            Manage official communications including
+                            newsletters and event announcements.
+                        </li>
+
+                        <li>
+                            Maintain the chapter calendar and coordinate
+                            meetings and events with the executive board.
+                        </li>
+
+                        <li>
+                            Manage the member roster and serve as a point of
+                            contact for members and external inquiries.
+                        </li>
+
                     </ul>
+
                 </div>
+
+
+                <!-- ACM Management Chair -->
+                <div class="experience-item">
+
+                    <h3>
+                        Management Chair – Association for Computer Machinery (ACM)
+                    </h3>
+
+                    <p class="experience-date">
+                        January 2025 – August 2025
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Managed logistics for events including hackathons,
+                            datathons, CTFs, and technical workshops.
+                        </li>
+
+                        <li>
+                            Coordinated end-to-end event planning including
+                            venues, schedules, and resources.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- CIC -->
+                <div class="experience-item">
+
+                    <h3>
+                        Coding Interview Code (CIC) – Member
+                    </h3>
+
+                    <p class="experience-date">
+                        January 2024 – Present
+                    </p>
+
+                </div>
+
+
+                <!-- GDG -->
+                <div class="experience-item">
+
+                    <h3>
+                        Google Developer Group (GDG) UTEP – Member
+                    </h3>
+
+                    <p class="experience-date">
+                        August 2025 – Present
+                    </p>
+
+                </div>
+
             </div>
+
         </section>
 
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
         <section id="projects" class="fade-in">
+
             <div class="container">
+
                 <h2>My Projects</h2>
+
                 <div class="project-grid">
+
+
+                    <!-- Stock Simulator -->
                     <div class="project-card">
-                        <h3>RFI Generator & Economic Impact Simulator</h3>
-                        <p>Developed a full-stack web app that generates professional RFI reports and economic impact simulations. Integrated the OpenAI API for context-aware responses and used a Supabase database to pull data dynamically.</p>
-                        <p class="project-tech"><strong>Tech Used:</strong> Flask, Supabase, OpenAI API, Streamlit</p>
+
+                        <h3>
+                            AI Hackathon Stock Trading Simulator
+                        </h3>
+
+                        <p>
+                            Built the backend execution engine for a gamified
+                            stock-trading simulator designed to teach financial
+                            literacy. Developed REST APIs for trade execution,
+                            portfolio valuation, balance tracking, and price
+                            lookup.
+                        </p>
+
+                        <p>
+                            Processed Excel datasets into clean time-series
+                            market data and implemented persistent portfolio
+                            state for cash, equity, holdings, and transaction
+                            history.
+                        </p>
+
+                        <p class="project-tech">
+                            <strong>Tech:</strong>
+                            Node.js, Express, React, XLSX, REST APIs, Recharts
+                        </p>
+
                     </div>
+
+
+
+                    <!-- RFI Generator -->
                     <div class="project-card">
-                        <h3>AI Resume Parser</h3>
-                        <p>Built a full-stack web app that parses resumes and provides automated scoring with personalized feedback. Utilized Pandas and NLP techniques to match candidate skills against job descriptions.</p>
-                        <p class="project-tech"><strong>Tech Used:</strong> Flask, NLP, Pandas, HTML, CSS</p>
+
+                        <h3>
+                            RFI Generator & Economic Impact Simulator
+                        </h3>
+
+                        <p>
+                            Built a full-stack application that generates
+                            professional RFI reports and economic impact
+                            simulations.
+                        </p>
+
+                        <p>
+                            Integrated the OpenAI API for intelligent,
+                            context-aware document generation and connected the
+                            application to Supabase for live data retrieval.
+                        </p>
+
+                        <p class="project-tech">
+                            <strong>Tech:</strong>
+                            Flask, Supabase, OpenAI API, Streamlit
+                        </p>
+
                     </div>
+
+
+
+                    <!-- Resume Parser -->
                     <div class="project-card">
-                        <h3>Eloy's Study Hub</h3>
-                        <p>Created an interactive study platform with Streamlit, integrating Google Generative AI for personalized assistance. Features include an AI PDF reader, a scientific calculator, and custom study aid generation.</p>
-                        <p class="project-tech"><strong>Tech Used:</strong> Python, Streamlit, Google Generative AI, PyPDF2</p>
+
+                        <h3>
+                            AI Resume Parser
+                        </h3>
+
+                        <p>
+                            Built a full-stack application that parses resumes,
+                            generates automated candidate scores, and provides
+                            personalized feedback.
+                        </p>
+
+                        <p>
+                            Used Pandas and natural language processing
+                            techniques to compare candidate skills with job
+                            requirements and benchmarks.
+                        </p>
+
+                        <p class="project-tech">
+                            <strong>Tech:</strong>
+                            Flask, NLP, Pandas, HTML, CSS
+                        </p>
+
                     </div>
+
+
+
+                    <!-- Study Hub -->
+                    <div class="project-card">
+
+                        <h3>
+                            Eloy's Study Hub
+                        </h3>
+
+                        <p>
+                            Developed an interactive study platform with
+                            Streamlit and Google Generative AI.
+                        </p>
+
+                        <p>
+                            Features include an AI-powered PDF reader,
+                            scientific calculator, and automatic generation of
+                            flashcards and quizzes from uploaded documents.
+                        </p>
+
+                        <p class="project-tech">
+                            <strong>Tech:</strong>
+                            Python, Streamlit, Google Generative AI,
+                            PyPDF2, Math
+                        </p>
+
+                    </div>
+
+
                 </div>
+
             </div>
+
         </section>
 
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
         <section id="skills" class="fade-in">
+
             <div class="container">
-                <h2>Skills</h2>
+
+                <h2>Technical Skills</h2>
+
                 <div class="skills-list">
-                    <span>Leadership</span>
-                    <span>Problem Solving</span>
-                    <span>Communication</span>
-                    <span>Collaboration</span>
-                    <span>Customer Service</span>
-                    <span>Critical Thinking</span>
-                    <span>Time Management</span>
-                    <span>Integrity</span>
-                    <span>Adaptability</span>
+
+                    <span>Python</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>React</span>
+                    <span>Flask</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>REST APIs</span>
+                    <span>Pandas</span>
+                    <span>NLP</span>
+                    <span>Streamlit</span>
+                    <span>Supabase</span>
+                    <span>OpenAI API</span>
+                    <span>Google Generative AI</span>
+                    <span>Recharts</span>
+                    <span>XLSX</span>
+
                 </div>
+
             </div>
+
         </section>
 
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
         <section id="contact" class="fade-in">
+
             <div class="container">
+
                 <h2>Contact Me</h2>
+
                 <div class="contact-info">
-                    <a href="mailto:perez.qeloy@gmail.com" class="contact-item">
+
+                    <a
+                        href="mailto:perez.qeloy@gmail.com"
+                        class="contact-item"
+                    >
                         <i class="fas fa-envelope"></i>
                         <span>perez.qeloy@gmail.com</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/eloy-perez-quinones/" target="_blank" rel="noopener noreferrer" class="contact-item">
+
+
+                    <a
+                        href="https://www.linkedin.com/in/eloy-perez-quinones/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-item"
+                    >
                         <i class="fab fa-linkedin"></i>
-                        <span>linkedin.com/in/eloy-perez-quinones</span>
+                        <span>LinkedIn</span>
                     </a>
+
+
+                    <a
+                        href="https://github.com/eloy785"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-item"
+                    >
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+
+
                     <div class="contact-item">
+
                         <i class="fas fa-map-marker-alt"></i>
                         <span>El Paso, Texas</span>
+
                     </div>
+
                 </div>
+
             </div>
+
         </section>
+
     </main>
 
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
     <footer>
+
         <div class="container">
-            <p>&copy; 2025 Eloy Perez Quinones. All rights reserved.</p>
+
+            <p>
+                &copy; 2026 Eloy Perez Quinones. All rights reserved.
+            </p>
+
         </div>
+
     </footer>
 
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
