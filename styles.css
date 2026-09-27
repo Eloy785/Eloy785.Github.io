@@ -1155,6 +1155,12 @@ footer {
 ========================= */
 
 .reveal {
+    opacity: 1;
+    transform: none;
+}
+
+/* Only hide reveal elements when JavaScript has actually loaded. */
+html.js-enabled .reveal {
     opacity: 0;
     transform: translateY(22px);
     transition:
@@ -1162,7 +1168,7 @@ footer {
         transform 0.7s ease;
 }
 
-.reveal.visible {
+html.js-enabled .reveal.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -1394,7 +1400,8 @@ footer {
         transition-duration: 0.01ms !important;
     }
 
-    .reveal {
+    .reveal,
+    html.js-enabled .reveal {
         opacity: 1;
         transform: none;
     }
