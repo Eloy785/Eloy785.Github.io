@@ -43,7 +43,7 @@ export default function App() {
           <div className="hero-panel">
             <div className="profile-card">
               <p className="mono-label">PROFILE.SYS / 01</p>
-              <img src="/EloyPerez.jpg" alt="Eloy Perez Quinones" />
+              <img src="/EloyPerez.jpeg" alt="Eloy Perez Quinones" />
               <div className="profile-footer">
                 <span>CS STUDENT</span>
                 <span>DATA + AI</span>
